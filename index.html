@@ -3,8 +3,36 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <meta name="description" content="معرض أعمال لتصميم إعلانات السوشيال ميديا من Enas Aljmzawy">
+  <meta name="keywords" content="تصميم اعلانات, سوشيال ميديا, جرافيك ديزاين, انستجرام, فيسبوك">
   <title>Photolock2025 - منصة التصاميم</title>
   <style>
+    /* التصميم القياسي للشاشة العريضة */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* التصميم المتجاوب للجوال */
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     body {
       margin: 0;
       font-family: 'Cairo', sans-serif;
@@ -89,6 +117,49 @@ section.contact
       background-color: white;
       color: black;
     }
+
+    .cta-container {
+  display: flex;
+  justify-content: center; /* توسيط أفقي */
+  align-items: center;      /* توسيط رأسي */
+  height: 10vh;            /* ارتفاع القسم = شاشة كاملة */
+   /* background-color: #f8f9fa;خلفية القسم (اختياري) */
+}
+
+.cta-button {
+  background-color: #ffc107;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  display: inline-block;
+  text-align: center;
+  animation: pulse 1.5s infinite;
+  transition: all 0.3s ease;
+}
+
+/* تأثير الزر عند التمرير */
+.cta-button:hover {
+  
+ transform: scale(1.05);
+box-shadow: 0 0 10px 4px rgba(255, 193, 7, 0.7); /* تأثير توهج */
+}
+
+/* تأثير نبض الزر (pulse) */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
   </style>
 </head>
 <body>
@@ -186,7 +257,10 @@ section.contact
         
         </a>
 
-
+<div class="cta-container">
+  <a class="cta-button" href="https://wa.me/962790972497" target="_blank">
+ اطلب تصميم الآن </a>
+</div>
   </section>
 <section class="contact">
   <h2>للطلب والاستفسار</h2>

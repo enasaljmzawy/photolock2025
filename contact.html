@@ -1,0 +1,232 @@
+<!doctype html>
+
+<head>
+<meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <meta name="description" content="معرض أعمال لتصميم إعلانات السوشيال ميديا من Enas Aljmzawy">
+  <meta name="keywords" content=" ADS, تواصل معي . تصميم ,تصميم اعلانات, سوشيال ميديا, جرافيك ديزاين, انستجرام, فيسبوك">
+
+<style>
+
+
+
+.contact {
+  background-color: #f7f7f7;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 12px;
+text-align: right;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  border-color: #0d6efd;
+  outline: none;
+}
+
+.contact button {
+  padding: 12px 20px;
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact button:hover {
+  background-color: #0056b3;
+}
+
+body {
+ justify-content: center; /* أفقيًا */
+      align-items: center;   
+; /* أزرق → بنفسجي */
+  color: black; /* يفضل لون النص يكون فاتح */
+  margin: 0;
+ 
+
+
+ font-family: 'Cairo', sans-serif;
+
+ align-items: center;
+ /* background: linear-gradient(to bottom, #f5f5dc, #ffffff);*/
+background-image: url('صورة2.jpg'); /* رابط الصورة */
+    background-size: cover; /* لتغطية الشاشة بالكامل */
+
+}
+
+section.contact
+
+      {max-width: 400px;
+      margin: auto;
+      background-color: #fff;
+      padding: 50px;
+      border-radius: 100px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);}
+
+
+  body {
+    background-color: #f0f0f0; /* تغيير اللون */
+    /* أو بدلاً من اللون */
+    /* background-image: url('your-image.jpg'); */
+   <!--. background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;-->
+  }
+
+a.button {
+      display: inline-block;
+      background-color: #0d6efd;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 20px;
+    }
+
+  header {  color: black; padding: 15px 0; text-align: center; }header {  color: black; padding: 15px 0; text-align: center; }header {  color: black; padding: 15px 0; text-align: center; }header {  color: black; padding: 15px 0; text-align: center; }header {  color: black; padding: 15px 0; text-align: center; }header {  color: black; padding: 15px 0; text-align: center; }header {  color: black; padding: 15px 0; text-align: center; }
+
+</style>
+</head>
+
+<body>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<section class="contact">
+    <h2>للطلب والاستفسار</h2>
+    <p><h4><i class="fas fa-phone"></i>     رقم الهاتف : <a href="tel:+962790972497">+962790972497</a></p>
+    <p><i class="fas fa-envelope"></i>  البريد الإلكتروني :<a href="mailto:epinky.art@gmail.com">epinky.art@gmail.com</a></p>
+    <p><i class="fab fa-whatsapp"></i>        واتس اب :<a href="https://wa.me/962790972497" target="_blank">WhatsApp</a></p></h4>
+</section>
+ <!-- <h4><li><a href="https://www.instagram.com/photolock2025" target="_blank">Instagram</a></li></h4>
+    -->
+    <!--<li><a href="https://twitter.com/yourusername" target="_blank">Twitter</a></li>-->
+  </ul>
+</section>
+<br>
+<!--
+<section id="contact" class="contact">
+  <h2>تواصل معنا</h2>
+  <form>
+    <input type="text" placeholder="الاسم الكامل" required>
+    <input type="email" placeholder="البريد الإلكتروني" required>
+    <textarea rows="5" placeholder="رسالتك" required></textarea>
+    <button type="submit">إرسال</button>
+  </form>
+-->
+
+<section style="max-width: 600px; margin: auto; padding: 20px;">
+ <section id="contact" class="contact">
+  <h2>تواصل معنا</h2>
+
+  <!-- رسالة النجاح أو الخطأ -->
+  <div id="response-message" style="display:none; margin-bottom: 20px; padding: 10px; border-radius: 5px;"></div>
+
+  <form id="contact-form" method="POST">
+   
+    <input type="text" id="name" name="name" required placeholder="الاسم الكامل" required style="width: 100%; padding: 8px; margin-bottom: 15px ;"><br>
+    <input type="email" id="email" name="email" required placeholder="البريد الإلكتروني" required style="width: 100%; padding: 8px; margin-bottom: 15px;"><br>
+
+   
+    <textarea id="message" name="message" rows="5" required placeholder="رسالتك" required style="width: 100%; padding: 8px; margin-bottom: 15px;"></textarea><br>
+
+    <button type="submit" style="background-color: #007BFF; color: white; padding: 10px 20px; border: none; cursor: pointer;">إرسال</button>
+  </form>
+<a href="index.html" class="button" >العودة للصفحة الرئيسية</a>
+</section>
+
+
+
+</section>
+
+
+
+<script>
+  const form = document.getElementById('contact-form');
+  const responseMessage = document.getElementById('response-message');
+
+  // استبدل الرابط أدناه برابط Formspree الخاص بك
+  const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xrbqqpkr ';
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault(); // منع السلوك الافتراضي للإرسال
+
+    const formData = new FormData(form);
+    const data = {};
+    formData.forEach((value, key) => data[key] = value);
+
+    fetch(FORMSPREE_ENDPOINT, {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    })
+    .then(response => {
+      if (response.ok) {
+        responseMessage.style.display = 'block';
+        responseMessage.style.backgroundColor = '#d4edda';
+        responseMessage.style.color = '#155724';
+        responseMessage.textContent = 'تم إرسال رسالتك بنجاح! شكرًا لتواصلِك.';
+        form.reset(); // مسح النموذج
+      } else {
+        response.json().then(data => {
+          let errorMessage = 'حدث خطأ أثناء الإرسال.';
+          if (data.errors && data.errors.length > 0) {
+            errorMessage = data.errors.map(e => e.message).join(', ');
+          }
+          responseMessage.style.display = 'block';
+          responseMessage.style.backgroundColor = '#f8d7da';
+          responseMessage.style.color = '#721c24';
+          responseMessage.textContent = errorMessage;
+        });
+      }
+    })
+    .catch(error => {
+      responseMessage.style.display = 'block';
+      responseMessage.style.backgroundColor = '#f8d7da';
+      responseMessage.style.color = '#721c24';
+      responseMessage.textContent = 'فشل الاتصال. يرجى المحاولة لاحقًا.';
+    });
+  });
+</script>
+</body>
+
+</html>

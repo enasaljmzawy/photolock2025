@@ -22,6 +22,61 @@
 
   
   <style>
+
+
+
+    nav {
+    background-color: #333;
+    padding: 10px 20px;
+  }
+
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  nav ul li {
+    position: relative;
+    margin-right: 20px;
+  }
+
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+  }
+
+  
+  nav ul li ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    display: none;
+    min-width: 200px;
+    z-index: 999;
+    border-radius: 5px;
+  }
+
+  nav ul li:hover ul {
+    display: block;
+  }
+
+  nav ul li ul li {
+    margin: 0;
+  }
+
+  nav ul li ul li a {
+    padding: 10px;
+    color: #fff;
+  }
+
+  nav ul li ul li a:hover {
+    background-color: #555;
+  }
 .section-border {
   border: 3px double #e0a800; /* بوردر مزدوج أصفر ذهبي */
   padding: 20px;
@@ -112,7 +167,7 @@ border-radius: 100px;
       display: flex;
       justify-content: center;
       gap: 20px;
-      background-color: #0056b3;
+      background-color: #00FFFF;
       padding: 10px 0;
       flex-wrap: wrap;
     }
@@ -137,29 +192,28 @@ border-radius: 100px;
       margin: 0;
       font-family: 'Cairo', sans-serif;
       direction: rtl;
-      background-color: white;
+      background-color: #cddafd;
       color: black;
     }
 
     header {
     }
 body {
- justify-content: center; /* أفقيًا */
-      align-items: center;   
-; /* أزرق → بنفسجي */
+justify-content: center; /* أفقيًا */
+align-items: center;   
+
   color: black; /* يفضل لون النص يكون فاتح */
   margin: 0;
- 
-
-
  font-family: 'Cairo', sans-serif;
 
  align-items: center;
-  background: linear-gradient(to bottom, #f5f5dc, #ffffff);
+ <!-- background: linear-gradient(to bottom, #f5f5dc, #ffffff);-->
 
 }
 
-
+header { 
+  
+  color: black; padding: 15px 0; text-align: center; }
 
     header h1 {
       font-size: 48px;
@@ -173,6 +227,13 @@ text-align: center;
       margin-bottom: 10px;
 text-align: center;
     }
+
+    header h3 {
+      font-size: 25px;
+      margin-bottom: 10px;
+text-align: center;
+    }
+    
     header p{
       font-size: 20px;
       max-width: 600px;
@@ -213,9 +274,10 @@ section.contact
       box-shadow: 0 4px 10px rgba(0,0,0,0.1)}
     footer {
       text-align: center;
-      padding: 30px;
-      background-color: white;
-      color: black;
+      padding: 20px;
+      font-size: 14px;
+      color: #fff;
+ margin-top: 30px;
     }
 
     .cta-container {
@@ -260,13 +322,36 @@ box-shadow: 0 0 10px 4px rgba(255, 193, 7, 0.7); /* تأثير توهج */
   }
 }
 
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
   </style>
 </head>
 <body>
 
   <header>
+
+     <nav>
+       <div class="logo">photolock</div> <!-- الكلمة على اليسار -->
+<ul>
+    <li><a href="index.html">الصفحة الرئيسية</a> </li>
+   <li> <a href="portfolio.html">معرض الأعمال</a> 
+
+<ul>
+       
+        <li><a href="https://enasaljmzawy.github.io/photolock2025/">تصاميم الإعلانات </a></li>
+ <li><a href="portfolio.html">إزالة خلفيات الصور</a></li>
+     <!-- <li><a href="social-posts.html">منشورات السوشال ميديا</a></li> -->
+      </ul></li>
+
+  
+  <li>  <a href="contact.html">تواصل معي</a></li>
+<a class="cta-button" href="https://wa.me/962790972497" target="_blank">اطلب تصميم الآن</a>
+  </nav>
     <section class="section-border">
-   <h1>Photolock 2025</h1>
+   
       
 <h2>
     
@@ -287,24 +372,9 @@ box-shadow: 0 0 10px 4px rgba(255, 193, 7, 0.7); /* تأثير توهج */
  اطلب تصميمك الآن، ودعنا نحول أفكارك لتحف بصرية 
 </h3>
 </section>
-  <nav>
-<ul>
-    <li><a href="index.html">الصفحة الرئيسية</a> </li>
-   <li> <a href="portfolio.html">معرض الأعمال</a> 
+ 
 
-<ul>
-       
-        <li><a href="https://enasaljmzawy.github.io/photolock2025/">تصاميم الإعلانات </a></li>
- <li><a href="portfolio.html">إزالة خلفيات الصور</a></li>
-     <!-- <li><a href="social-posts.html">منشورات السوشال ميديا</a></li> -->
-      </ul></li>
 
-  
-  <li>  <a href="contact.html">تواصل معي</a></li>
-<a class="cta-button" href="https://wa.me/962790972497" target="_blank">اطلب تصميم الآن</a>
-  </nav>
-
-     </section>
   </header>
 
   <section class="gallery">
@@ -366,10 +436,17 @@ box-shadow: 0 0 10px 4px rgba(255, 193, 7, 0.7); /* تأثير توهج */
 
 
   </section>
+<div class="cta-container">
+<a class="cta-button" href="https://wa.me/962790972497" target="_blank">اطلب تصميم الآن</a></div>
+<div>
+<a  href="portfolio.html" class="button" > قسم ازالة خلفيات الصور</a></div>
+<div>
+<a href="contact.html" class="button"  >قسم تواصل معنا</a></div>
 
 
-  <div class="cta-container">
-<!--  <a class="cta-button" href="https://wa.me/962790972497" target="_blank">
+
+ <!-- <div class="cta-container">
+  <a class="cta-button" href="https://wa.me/962790972497" target="_blank">
  اطلب تصميم الآن </a>
 </div>
 <section class="contact">
@@ -378,7 +455,7 @@ box-shadow: 0 0 10px 4px rgba(255, 193, 7, 0.7); /* تأثير توهج */
   <p>البريد الإلكتروني: <a href="https://www.gmail.com">epinky.art@gmail.com</a>
 <p>  واتس اب: <a href="https://wa.me/962790972497" target="_blank">WhatsApp</a></li></p>
   </h4>
-  <ul>
+  <ul>-->>
  <!-- <h4><li><a href="https://www.instagram.com/photolock2025" target="_blank">Instagram</a></li></h4>
     -->
     <!--<li><a href="https://twitter.com/yourusername" target="_blank">Twitter</a></li>-->

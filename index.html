@@ -25,7 +25,33 @@
 
 header 
 {
+cta-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem 0;
+  }
 
+  .cta-button,
+  .button {
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 10px 4px rgba(184, 192, 255, 0.4); /* توهج ناعم */
+  }
+
+  .cta-button:hover,
+  .button:hover {
+    background-color: #2980b9;
+    box-shadow: 0 0 10px 4px rgba(52, 152, 219, 0.6); /* توهج عند المرور */
+  }
  color: #1e1e2f; 
  padding: 1rem 2rem; 
    padding: 1rem 2rem;
@@ -210,13 +236,9 @@ border-radius: 100px;
 justify-content: center; /* أفقيًا */
 align-items: center;   
 
- 
-
- 
-
  align-items: center;
       background-color:  linear-gradient(to right,  #F7F7F7 , #9ED7FF);
-;
+
 }
 
 header { 
